@@ -32,3 +32,18 @@
   color: getTextColor('accent');
   background-color: inherit;
 }
+
+.contact-us__btn {
+  width: 200px;
+
+  &--black {
+    color: getTextColor('secondary');
+    background-color: getBackgroundColor('black');
+  }
+
+  &--white {
+    border: 1px solid getBorderColor('black');
+    color: getTextColor('primary');
+    background-color: inherit;
+  }
+}

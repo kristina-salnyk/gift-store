@@ -10,6 +10,10 @@
 
 .catalog__item {
   width: calc((100% - 3 * 30px) / 4);
+
+  &:hover {
+    filter: $card-shadow;
+  }
 }
 
 .catalog__wrap {
@@ -27,6 +31,10 @@
   flex-grow: 1;
 
   background-color: getBackgroundColor('secondary');
+
+  .catalog__item:hover & {
+    background-color: getBackgroundColor('primary');
+  }
 }
 
 .catalog__title {

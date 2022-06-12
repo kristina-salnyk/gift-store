@@ -1,0 +1,19 @@
+.contact-us {
+  padding-top: 81px;
+  padding-bottom: 69px;
+
+  background-color: getBackgroundColor('accent');
+}
+
+.contact-us__content {
+  font-size: 32px;
+  line-height: 1.41;
+}
+
+.contact-us__btns {
+  display: flex;
+}
+
+.contact-us__btn-item:not(:first-child) {
+  margin-left: 16px;
+}

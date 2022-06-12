@@ -388,6 +388,19 @@ svg {
   background-color: inherit;
 }
 
+.contact-us__btn {
+  width: 200px;
+}
+.contact-us__btn--black {
+  color: #fff;
+  background-color: #231f20;
+}
+.contact-us__btn--white {
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: inherit;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,6 +482,17 @@ svg {
   padding: 0 135px;
 }
 
+.contact-us__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .posts__title {
   font-weight: 400;
   font-size: 32px;
@@ -500,6 +524,10 @@ svg {
 .catalog__item {
   width: calc((100% - 90px) / 4);
 }
+.catalog__item:hover {
+  -webkit-filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
 
 .catalog__wrap {
   height: 100%;
@@ -519,6 +547,9 @@ svg {
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: #fafafa;
+}
+.catalog__item:hover .catalog__content {
+  background-color: #ffffff;
 }
 
 .catalog__title {
@@ -556,4 +587,25 @@ svg {
 .catalog__details[open] > .catalog__summary::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.contact-us {
+  padding-top: 81px;
+  padding-bottom: 69px;
+  background-color: #f7941e;
+}
+
+.contact-us__content {
+  font-size: 32px;
+  line-height: 1.41;
+}
+
+.contact-us__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us__btn-item:not(:first-child) {
+  margin-left: 16px;
 }/*# sourceMappingURL=main.css.map */
