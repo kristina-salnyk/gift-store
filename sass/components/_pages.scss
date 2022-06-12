@@ -1,0 +1,18 @@
+.pages {
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+
+  line-height: 1.22;
+}
+
+.pages__item:not(:first-child) {
+  margin-left: 31px;
+}
+
+.pages__link {
+  color: getTextColor('primary');
+}

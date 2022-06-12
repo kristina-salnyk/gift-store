@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: getBackgroundColor('section');
+}
+
+.hero__content {
+  //   padding-top: 154px;
+  //   padding-bottom: 135px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__img {
+  width: 50%;
+}
+
+.hero__title {
+  max-width: 433px;
+
+  font-size: 56px;
+  line-height: 1.23;
+}
+
+.hero__descr {
+  margin-top: 36px;
+
+  max-width: 422px;
+
+  font-size: 20px;
+  line-height: 1.4;
+}

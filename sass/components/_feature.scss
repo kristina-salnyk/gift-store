@@ -1,0 +1,34 @@
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: getBackgroundColor('section');
+}
+
+.feature__content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature__img {
+  width: 50%;
+}
+
+.feature__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.41;
+}
+
+.feature__descr {
+  margin-top: 23px;
+
+  max-width: 441px;
+
+  font-size: 20px;
+  line-height: 1.4;
+
+  font-size: 20px;
+  line-height: 1.4;
+}

@@ -5,70 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gifts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <a class="logo" href="./">logo</a>
+      <nav class="nav header__nav">
+        <a class="logo" href="./">logo</a>
 
-          <ul class="pages">
-            <li class="pages__item"><a class="pages__link" href="#">Home</a></li>
-            <li class="pages__item"><a class="pages__link" href="#">About Us</a></li>
-            <li class="pages__item"><a class="pages__link" href="#">Services</a></li>
-            <li class="pages__item"><a class="pages__link" href="#">catalogs</a></li>
-          </ul>
-        </nav>
+        <ul class="pages">
+          <li class="pages__item"><a class="pages__link" href="#">Home</a></li>
+          <li class="pages__item"><a class="pages__link" href="#">About Us</a></li>
+          <li class="pages__item"><a class="pages__link" href="#">Services</a></li>
+          <li class="pages__item"><a class="pages__link" href="#">Blogs</a></li>
+        </ul>
+      </nav>
 
-        <button class="btn header__btn" type="button">Gift Finder</button>
-      </div>
+      <button class="btn header__btn" type="button">Gift Finder</button>
     </header>
 
     <main>
-      <section class="section hero">
-        <h1 class="hero__title">Find a gift for your wife or girlfriend</h1>
-        <p class="hero__descr">
-          Struggling to find a gift for your wife or girlfriend? No problem!
-        </p>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Find a gift for your wife or girlfriend</h1>
+          <p class="hero__descr">
+            Struggling to find a gift for your wife or girlfriend? No problem!
+          </p>
+          <button class="btn hero__btn" type="button">Find gift now</button>
+        </div>
         <img
           class="hero__img"
           src="./images/background-happy-couple.jpg"
           alt="Happy couple"
-          width="719"
+          width="50%"
         />
       </section>
 
-      <section class="section feature">
+      <section class="feature">
         <img
           class="feature__img"
           src="./images/background-thanks-card.jpg"
           alt="Thanks card"
-          width="733"
+          width="50%"
         />
-        <h2 class="feature__title">How we work</h2>
-        <p class="feature__descr">
-          We've actually already asked hundreds of women what they want, and made a database with
-          the results. All you have to do is take our short survey that only takes seconds, and our
-          proprietary algorithm will match you with a few perfect gift options.
-        </p>
-        <button class="btn feature__btn" type="button">Learn More</button>
+        <div class="feature__content">
+          <h2 class="feature__title">How we work</h2>
+          <p class="feature__descr">
+            We've actually already asked hundreds of women what they want, and made a database with
+            the results. All you have to do is take our short survey that only takes seconds, and
+            our proprietary algorithm will match you with a few perfect gift options.
+          </p>
+          <button class="btn feature__btn" type="button">Learn More</button>
+        </div>
       </section>
 
-      <section class="posts">
+      <section class="section posts">
         <div class="container">
           <h2 class="posts__title">Gifts for all Occasions</h2>
           <p class="posts__descr">"Try our web app to find the best gifts for all occasions"</p>
-          <ul class="catalog">
+          <ul class="catalog posts__catalog">
             <li class="catalog__item">
               <img class="catalog__img" src="./images/birthday.jpg" alt="Birthday" width="270" />
-              <h3 class="catalog__title">Birthday</h3>
-              <details class="btn catalog__btn">
-                <summary>See More ›</summary>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ipsam provident
-                saepe, illum dolores soluta sequi optio nihil ea commodi.
-              </details>
+              <div class="catalog__content">
+                <h3 class="catalog__title">Birthday</h3>
+                <details class="catalog__details">
+                  <summary class="catalog__summary">See More</summary>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ipsam provident
+                  saepe, illum dolores soluta sequi optio nihil ea commodi.
+                </details>
+              </div>
             </li>
             <li class="catalog__item">
               <img
@@ -77,12 +86,14 @@
                 alt="Anniversary"
                 width="270"
               />
-              <h3 class="catalog__title">Anniversary</h3>
-              <details class="btn catalog__btn">
-                <summary>See More ›</summary>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam, veritatis
-                alias illo vitae maiores tenetur iure dicta! Dolorem, nam!
-              </details>
+              <div class="catalog__content">
+                <h3 class="catalog__title">Anniversary</h3>
+                <details class="catalog__details">
+                  <summary class="catalog__summary">See More</summary>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam,
+                  veritatis alias illo vitae maiores tenetur iure dicta! Dolorem, nam!
+                </details>
+              </div>
             </li>
             <li class="catalog__item">
               <img
@@ -91,21 +102,25 @@
                 alt="Valentine's Day"
                 width="270"
               />
-              <h3 class="catalog__title">Valentine's Day</h3>
-              <details class="btn catalog__btn">
-                <summary>See More ›</summary>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum ipsa veniam
-                quibusdam. Architecto placeat deserunt dolorum illo ad voluptates.
-              </details>
+              <div class="catalog__content">
+                <h3 class="catalog__title">Valentine's Day</h3>
+                <details class="catalog__details">
+                  <summary class="catalog__summary">See More</summary>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum ipsa
+                  veniam quibusdam. Architecto placeat deserunt dolorum illo ad voluptates.
+                </details>
+              </div>
             </li>
             <li class="catalog__item">
               <img class="catalog__img" src="./images/christmas.jpg" alt="Christmas" width="270" />
-              <h3 class="catalog__title">Christmas</h3>
-              <details class="btn catalog__btn">
-                <summary>See More ›</summary>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ullam deleniti illo
-                accusamus. Magnam totam fuga in quisquam! Ipsa, maxime?
-              </details>
+              <div class="catalog__content">
+                <h3 class="catalog__title">Christmas</h3>
+                <details class="catalog__details">
+                  <summary class="catalog__summary">See More</summary>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ullam deleniti
+                  illo accusamus. Magnam totam fuga in quisquam! Ipsa, maxime?
+                </details>
+              </div>
             </li>
           </ul>
         </div>
@@ -142,8 +157,8 @@
             />
             <h3 class="article__title">Mr. John Doe</h3>
             <p class="article__descr">The best way to wish your wife</p>
-            <details class="btn article__btn">
-              <summary>Read More</summary>
+            <details class="article__details">
+              <summary class="article__summary">Read More</summary>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sint, assumenda sunt
               fugit sed corporis. Ratione assumenda placeat praesentium aperiam.
             </details>
@@ -157,8 +172,8 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore...
                 </p>
-                <details class="btn article__btn">
-                  <summary>Read More</summary>
+                <details class="article__details">
+                  <summary class="article__summary">Read More</summary>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, eius.
                   Distinctio magni nulla reprehenderit quis libero a atque dignissimos aut.
                 </details>
@@ -173,8 +188,8 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore...
                 </p>
-                <details class="btn article__btn">
-                  <summary>Read More</summary>
+                <details class="article__details">
+                  <summary class="article__summary">Read More</summary>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste dignissimos est
                   velit aperiam itaque corrupti vitae ducimus necessitatibus, quasi atque.
                 </details>

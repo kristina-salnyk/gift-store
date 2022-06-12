@@ -1,0 +1,11 @@
+.header {
+  padding: 36px 34px 36px 80px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: getBackgroundColor('secondary');
+}
