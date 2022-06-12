@@ -15,8 +15,6 @@
 .catalog__content {
   padding: 24px;
 
-  flex-grow: 1;
-
   background-color: getBackgroundColor('secondary');
 }
 
@@ -36,7 +34,6 @@
 .catalog__details {
   margin-top: 74px;
 
-  height: 100%;
   width: 100%;
 }
 
