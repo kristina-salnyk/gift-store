@@ -9,11 +9,22 @@
 }
 
 .catalog__item {
-  max-width: calc((100% - 3 * 30px) / 4);
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.catalog__wrap {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
 }
 
 .catalog__content {
   padding: 24px;
+
+  flex-grow: 1;
 
   background-color: getBackgroundColor('secondary');
 }
@@ -35,6 +46,8 @@
   margin-top: 74px;
 
   width: 100%;
+
+  flex-grow: 1;
 }
 
 .catalog__summary {
