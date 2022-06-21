@@ -1,0 +1,14 @@
+.rights {
+  margin-left: 14px;
+
+  display: flex;
+}
+
+.rights__separator {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.rights__link {
+  color: getTextColor('primary');
+}

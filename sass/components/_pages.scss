@@ -13,6 +13,15 @@
   display: flex;
 }
 
+.pages__item {
+  font-size: 14px;
+  line-height: 1.43;
+
+  .footer__pages & {
+    font-weight: 900;
+  }
+}
+
 .pages__item:not(:first-child) {
   margin-left: 31px;
 

@@ -5,3 +5,13 @@
 
   background-color: getBackgroundColor('secondary');
 }
+
+.footer__copyright {
+  margin-top: 72px;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 14px;
+  line-height: 1.43;
+}
