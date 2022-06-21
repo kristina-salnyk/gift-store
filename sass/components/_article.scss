@@ -1,0 +1,28 @@
+.article {
+  padding: 48px 48px 50px 48px;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.article__descr {
+  margin-top: 16px;
+  margin-bottom: auto;
+
+  line-height: 1.39;
+}
+
+.article__title {
+  font-size: 24px;
+  line-height: 1.42;
+}
+
+.article__link {
+  margin-top: 16px;
+
+  display: inline-block;
+
+  color: getTextColor('primary');
+}

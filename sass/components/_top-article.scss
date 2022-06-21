@@ -1,0 +1,44 @@
+.top-article {
+  margin-top: 71px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: getTextColor('secondary');
+  background-color: getBackgroundColor('black');
+}
+
+.top-article__content {
+  margin-left: 78px;
+
+  padding-top: 63px;
+  padding-bottom: 49px;
+
+  width: 100%;
+}
+
+.top-article__descr {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.top-article__title {
+  margin-top: 27px;
+
+  max-width: 492px;
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.21;
+}
+
+.top-article__link {
+  margin-top: 60px;
+
+  display: inline-block;
+
+  font-weight: 300;
+  color: getTextColor('secondary');
+}

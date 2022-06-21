@@ -1,0 +1,28 @@
+.blog {
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+
+.blog__descr {
+  margin-top: 23px;
+
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.blog__articles {
+  margin-top: 40px;
+
+  display: flex;
+  gap: 30px;
+}
+
+.blog__item {
+  width: calc((100% - 30px) / 2);
+}
+
+.blog__item:hover,
+.blog__item:focus {
+  box-shadow: $article-shadow;
+}

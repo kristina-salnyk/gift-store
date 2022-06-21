@@ -65,7 +65,7 @@
 
       <section class="section posts">
         <div class="container">
-          <h2 class="posts__title">Gifts for all Occasions</h2>
+          <h2 class="section__title posts__title">Gifts for all Occasions</h2>
           <p class="posts__descr">"Try our web app to find the best gifts for all occasions"</p>
           <ul class="catalog posts__catalog">
             <li class="catalog__item">
@@ -141,6 +141,7 @@
 
       <section class="section contact-us">
         <div class="container contact-us__container">
+          <h2 class="section__title contact-us__title visually-hidden">Contact Us</h2>
           <div class="contact-us__content">
             <h3 class="contact-us__title">Ready to get started?</h3>
             <p class="contact-us__descr">Sign up or contact us</p>
@@ -162,28 +163,26 @@
 
       <section class="section blog">
         <div class="container">
-          <h2 class="blog__title">Our Best catalogs Ever</h2>
+          <h2 class="section__title blog__title">Our Best catalogs Ever</h2>
           <p class="blog__descr">
             "Try our catalog to find the best tips and tricks to select your gift"
           </p>
 
-          <article class="article">
+          <article class="top-article">
             <img
-              class="article__img"
+              class="top-article__img"
               src="./images/lovers-on-swing.jpg"
               alt="Lovers on a swing"
               width="400"
             />
-            <h3 class="article__title">Mr. John Doe</h3>
-            <p class="article__descr">The best way to wish your wife</p>
-            <details class="article__details">
-              <summary class="article__summary">Read More</summary>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sint, assumenda sunt
-              fugit sed corporis. Ratione assumenda placeat praesentium aperiam.
-            </details>
+            <div class="top-article__content">
+              <p class="top-article__descr">Mr. John Doe</p>
+              <h3 class="top-article__title">The best way to wish your wife</h3>
+              <a class="top-article__link" href="#"> Read More </a>
+            </div>
           </article>
 
-          <ul class="blog__list">
+          <ul class="blog__articles">
             <li class="blog__item">
               <article class="article blog__article">
                 <h4 class="article__title">Database to find the gifts for your girlfriend</h4>
@@ -191,14 +190,11 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore...
                 </p>
-                <details class="article__details">
-                  <summary class="article__summary">Read More</summary>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, eius.
-                  Distinctio magni nulla reprehenderit quis libero a atque dignissimos aut.
-                </details>
+
+                <a class="article__link" href="#">Read More</a>
               </article>
             </li>
-            <li class="articles__item">
+            <li class="blog__item">
               <article class="article blog__article">
                 <h4 class="article__title">
                   How Artificial Intelligence read your mind to find the best gift
@@ -207,11 +203,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore...
                 </p>
-                <details class="article__details">
-                  <summary class="article__summary">Read More</summary>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste dignissimos est
-                  velit aperiam itaque corrupti vitae ducimus necessitatibus, quasi atque.
-                </details>
+                <a class="article__link" href="#">Read More</a>
               </article>
             </li>
           </ul>
