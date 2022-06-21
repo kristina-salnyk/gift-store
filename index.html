@@ -17,7 +17,7 @@
       <nav class="nav header__nav">
         <a class="logo" href="./">logo</a>
 
-        <ul class="pages">
+        <ul class="pages header__pages">
           <li class="pages__item"><a class="pages__link" href="#">Home</a></li>
           <li class="pages__item"><a class="pages__link" href="#">About Us</a></li>
           <li class="pages__item"><a class="pages__link" href="#">Services</a></li>
@@ -212,52 +212,69 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <nav class="nav footer__nav">
-          <ul class="pades">
-            <li class="pades__item"><a class="pades__link" href="#">Home</a></li>
-            <li class="pades__item"><a class="pades__link" href="#">About</a></li>
-          </ul>
-          <a class="logo" href="./">logo</a>
-          <ul class="pades">
-            <li class="pades__item"><a class="pades__link" href="#">Service</a></li>
-            <li class="pades__item"><a class="pades__link" href="#">catalog</a></li>
-          </ul>
-        </nav>
-
-        <ul class="contacts">
-          <li class="social">
-            <a class="social__link" href="#"
-              ><img src="./images/facebook.svg" alt="Facebook logo"
-            /></a>
-            <a class="social__link" href="#"
-              ><img src="./images/twitter.svg" alt="Twitter logo"
-            /></a>
-            <a class="social__link" href="#"
-              ><img src="./images/instagram.svg" alt="Instagram logo"
-            /></a>
-            <a class="social__link" href="#"
-              ><img src="./images/youtube.svg" alt="YouTube logo"
-            /></a>
-            <a class="social__link" href="#"
-              ><img src="./images/pinterest.svg" alt="Pinterest logo"
-            /></a>
-          </li>
+      <nav class="nav footer__nav">
+        <ul class="pages footer__pages">
+          <li class="pages__item"><a class="pages__link" href="#">Home</a></li>
+          <li class="pages__item"><a class="pages__link" href="#">About</a></li>
         </ul>
-
-        <p class="copy">
-          &copy; <time datetime="2010">2010</time> — <time datetime="2020">2020</time>
-        </p>
-        <ul class="rights">
-          <li class="rights__item">
-            <a class="rights__link" href="#"> Privacy</a>
-          </li>
-          <li class="rights__item">
-            <span class="rights__separator">—</span>
-            <a class="rights__link" href="#">Terms</a>
-          </li>
+        <a class="logo" href="./">logo</a>
+        <ul class="pages footer__pages">
+          <li class="pages__item"><a class="pages__link" href="#">Service</a></li>
+          <li class="pages__item"><a class="pages__link" href="#">Blog</a></li>
         </ul>
-      </div>
+      </nav>
+
+      <ul class="social footer__social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="40" height="40">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="40" height="40">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="40" height="40">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="40" height="40">
+              <use href="./images/icons.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="40" height="40">
+              <use href="./images/icons.svg#pinterest"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div
+      <p class="copy">
+        &copy; <time datetime="2010">2010</time> — <time datetime="2020">2020</time>
+      </p>
+      <ul class="rights">
+        <li class="rights__item">
+          <a class="rights__link" href="#"> Privacy</a>
+        </li>
+        <li class="rights__item">
+          <span class="rights__separator">—</span>
+          <a class="rights__link" href="#">Terms</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

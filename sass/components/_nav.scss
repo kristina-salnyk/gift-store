@@ -1,1 +1,8 @@
+.footer__nav {
+  padding-bottom: 43px;
 
+  display: flex;
+  justify-content: space-around;
+
+  border-bottom: 1px solid getBorderColor('black');
+}

@@ -1,4 +1,4 @@
-.pages {
+.header__pages {
   position: absolute;
   top: 47px;
   left: 50%;
@@ -9,8 +9,16 @@
   line-height: 1.22;
 }
 
+.footer__pages {
+  display: flex;
+}
+
 .pages__item:not(:first-child) {
   margin-left: 31px;
+
+  .footer__pages & {
+    margin-left: 81px;
+  }
 }
 
 .pages__link {

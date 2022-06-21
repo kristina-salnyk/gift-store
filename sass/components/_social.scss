@@ -1,0 +1,31 @@
+.footer__social {
+  margin-top: 55px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 25px;
+}
+
+.social__link {
+  display: inline-block;
+
+  color: getBackgroundColor('black');
+  background-color: getBackgroundColor('primary');
+
+  border-radius: 50%;
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: getBackgroundColor('accent');
+  background-color: getBackgroundColor('black');
+}

@@ -340,7 +340,17 @@ svg {
   color: #231f20;
 }
 
-.pages {
+.footer__nav {
+  padding-bottom: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #000000;
+}
+
+.header__pages {
   position: absolute;
   top: 47px;
   left: 50%;
@@ -352,8 +362,17 @@ svg {
   line-height: 1.22;
 }
 
+.footer__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .pages__item:not(:first-child) {
   margin-left: 31px;
+}
+.footer__pages .pages__item:not(:first-child) {
+  margin-left: 81px;
 }
 
 .pages__link {
@@ -714,5 +733,41 @@ svg {
 }
 
 .footer {
+  padding: 106px 220px 35px;
+  text-align: center;
   background-color: #fafafa;
+}
+
+.footer__social {
+  margin-top: 55px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 25px;
+}
+
+.social__link {
+  display: inline-block;
+  color: #231f20;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: #f7941e;
+  background-color: #231f20;
 }/*# sourceMappingURL=main.css.map */
