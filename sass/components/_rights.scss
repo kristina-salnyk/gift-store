@@ -10,5 +10,10 @@
 }
 
 .rights__link {
-  color: getTextColor('primary');
+  color: getTextColor("primary");
+
+  &:hover,
+  &:focus {
+    color: getTextColor("accent");
+  }
 }

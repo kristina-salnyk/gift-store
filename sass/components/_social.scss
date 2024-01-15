@@ -14,8 +14,8 @@
 .social__link {
   display: inline-block;
 
-  color: getBackgroundColor('black');
-  background-color: getBackgroundColor('primary');
+  color: getBackgroundColor("black");
+  background-color: getBackgroundColor("primary");
 
   border-radius: 50%;
 }
@@ -26,5 +26,5 @@
 
 .social__link:hover,
 .social__link:focus {
-  color: getBackgroundColor('accent');
+  color: getBackgroundColor("accent");
 }

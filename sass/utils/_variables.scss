@@ -1,7 +1,7 @@
 $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-$primary-font: 'Roboto', sans-serif;
-$logo-font: 'Homemade Apple', cursive;
+$primary-font: "Roboto", sans-serif;
+$logo-font: "Homemade Apple", cursive;
 
 $card-shadow: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
 $article-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
@@ -10,23 +10,23 @@ $card-bgr-color: #f5f5f5;
 $label-bgr-color: #eee;
 
 $background-colors: (
-  'primary': #ffffff,
-  'secondary': #fafafa,
-  'black': #231f20,
-  'accent': #f7941e,
-  'section': #f1f1f2,
+  "primary": #ffffff,
+  "secondary": #fafafa,
+  "black": #231f20,
+  "accent": #f7941e,
+  "section": #f1f1f2,
 );
 
 $text-colors: (
-  'primary': #000000,
-  'secondary': #fff,
-  'accent': #f7941e,
-  'logo': #231f20,
+  "primary": #000000,
+  "secondary": #fff,
+  "accent": #f7941e,
+  "logo": #231f20,
 );
 
 $border-colors: (
-  'black': #000000,
-  'accent': #f7941e,
+  "black": #000000,
+  "accent": #f7941e,
 );
 
 @function getBackgroundColor($key) {

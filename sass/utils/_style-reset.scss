@@ -3,8 +3,8 @@ body {
   font-size: 18px;
   line-height: 1.22;
 
-  color: getTextColor('primary');
-  background-color: getBackgroundColor('primary');
+  color: getTextColor("primary");
+  background-color: getBackgroundColor("primary");
 
   &.modal-is-open {
     position: relative;

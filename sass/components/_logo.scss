@@ -5,5 +5,10 @@
   font-size: 18px;
   line-height: 2.17;
 
-  color: #231f20;
+  color: getTextColor("primary");
+
+  &:hover,
+  &:focus {
+    color: getTextColor("accent");
+  }
 }

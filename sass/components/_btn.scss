@@ -4,16 +4,21 @@
 
   text-transform: uppercase;
 
-  border: 1px solid getBorderColor('accent');
+  border: 1px solid getBorderColor("accent");
   border-radius: 5px;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .header__btn {
   width: 150px;
 
-  color: getTextColor('accent');
+  color: getTextColor("accent");
   background-color: inherit;
 }
 
@@ -22,8 +27,8 @@
 
   width: 200px;
 
-  color: getTextColor('secondary');
-  background-color: getBackgroundColor('accent');
+  color: getTextColor("secondary");
+  background-color: getBackgroundColor("accent");
 }
 
 .feature__btn {
@@ -31,7 +36,7 @@
 
   width: 200px;
 
-  color: getTextColor('accent');
+  color: getTextColor("accent");
   background-color: inherit;
 }
 
@@ -39,13 +44,13 @@
   width: 200px;
 
   &--black {
-    color: getTextColor('secondary');
-    background-color: getBackgroundColor('black');
+    color: getTextColor("secondary");
+    background-color: getBackgroundColor("black");
   }
 
   &--white {
-    border: 1px solid getBorderColor('black');
-    color: getTextColor('primary');
+    border: 1px solid getBorderColor("black");
+    color: getTextColor("primary");
     background-color: inherit;
   }
 }

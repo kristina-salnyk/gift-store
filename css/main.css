@@ -10,8 +10,7 @@ Use a better box model (opinionated).
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -20,15 +19,10 @@ Use a better box model (opinionated).
 3. Use a more readable tab size (opinionated).
 */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4;
-  /* 3 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
 }
 
 /*
@@ -40,10 +34,8 @@ Sections
 2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  margin: 0;
-  /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  /* 2 */
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
 /*
@@ -55,10 +47,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /*
@@ -69,8 +59,7 @@ Text-level semantics
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -89,10 +78,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -130,10 +117,8 @@ Tabular data
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
 /*
@@ -149,14 +134,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -227,10 +208,8 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -245,10 +224,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /*
@@ -311,8 +288,7 @@ svg {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -320,15 +296,9 @@ svg {
 .header {
   padding: 36px 34px 36px 80px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fafafa;
 }
 
@@ -337,16 +307,16 @@ svg {
   font-family: "Homemade Apple", cursive;
   font-size: 18px;
   line-height: 2.17;
-  color: #231f20;
+  color: #000000;
+}
+.logo:hover, .logo:focus {
+  color: #f7941e;
 }
 
 .footer__nav {
   padding-bottom: 43px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border-bottom: 1px solid #000000;
 }
 
@@ -354,17 +324,12 @@ svg {
   position: absolute;
   top: 47px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateX(-50%);
   display: flex;
   line-height: 1.22;
 }
 
 .footer__pages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -386,6 +351,9 @@ svg {
 .pages__link {
   color: #000000;
 }
+.pages__link:hover, .pages__link:focus {
+  color: #f7941e;
+}
 
 .btn {
   padding-top: 15px;
@@ -394,6 +362,9 @@ svg {
   border: 1px solid #f7941e;
   border-radius: 5px;
   cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  opacity: 0.6;
 }
 
 .header__btn {
@@ -430,15 +401,9 @@ svg {
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f1f1f2;
 }
 
@@ -465,15 +430,9 @@ svg {
 }
 
 .feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f1f1f2;
 }
 
@@ -518,14 +477,9 @@ svg {
 }
 
 .contact-us__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .posts__descr {
@@ -540,12 +494,8 @@ svg {
 }
 
 .catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -553,27 +503,19 @@ svg {
   width: calc((100% - 90px) / 4);
 }
 .catalog__item:hover, .catalog__item:focus {
-  -webkit-filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
-          filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
 }
 
 .catalog__wrap {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
 .catalog__content {
   padding: 24px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   background-color: #fafafa;
 }
 .catalog__content .catalog__item:hover, .catalog__item:focus .catalog__content {
@@ -595,14 +537,13 @@ svg {
 .catalog__details {
   margin-top: 74px;
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .catalog__summary {
   margin-bottom: 30px;
   display: block;
+  cursor: pointer;
 }
 .catalog__summary::marker {
   display: none;
@@ -613,8 +554,7 @@ svg {
   content: "›";
 }
 .catalog__details[open] > .catalog__summary::after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .contact-us {
@@ -629,8 +569,6 @@ svg {
 }
 
 .contact-us__btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -652,8 +590,6 @@ svg {
 
 .blog__articles {
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
@@ -664,21 +600,14 @@ svg {
 
 .blog__item:hover,
 .blog__item:focus {
-  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
-          box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
 
 .top-article {
   margin-top: 71px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   background-color: #231f20;
 }
@@ -710,16 +639,14 @@ svg {
   font-weight: 300;
   color: #fff;
 }
+.top-article__link:hover, .top-article__link:focus {
+  color: #f7941e;
+}
 
 .article {
   padding: 48px 48px 50px 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -739,6 +666,9 @@ svg {
   display: inline-block;
   color: #000000;
 }
+.article__link:hover, .article__link:focus {
+  color: #f7941e;
+}
 
 .footer {
   padding: 106px 220px 35px;
@@ -748,12 +678,8 @@ svg {
 
 .footer__copyright {
   margin-top: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.43;
 }
@@ -763,12 +689,8 @@ svg {
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .social__item:not(:first-child) {
@@ -793,8 +715,6 @@ svg {
 
 .rights {
   margin-left: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -805,4 +725,9 @@ svg {
 
 .rights__link {
   color: #000000;
-}/*# sourceMappingURL=main.css.map */
+}
+.rights__link:hover, .rights__link:focus {
+  color: #f7941e;
+}
+
+/*# sourceMappingURL=main.css.map */

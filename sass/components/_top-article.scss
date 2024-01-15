@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: center;
 
-  color: getTextColor('secondary');
-  background-color: getBackgroundColor('black');
+  color: getTextColor("secondary");
+  background-color: getBackgroundColor("black");
 }
 
 .top-article__content {
@@ -40,5 +40,10 @@
   display: inline-block;
 
   font-weight: 300;
-  color: getTextColor('secondary');
+  color: getTextColor("secondary");
+
+  &:hover,
+  &:focus {
+    color: getTextColor("accent");
+  }
 }
