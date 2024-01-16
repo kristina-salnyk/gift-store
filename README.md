@@ -1,5 +1,5 @@
 
-# GiftStore Landing Page
+# GiftStore
 
 This is a simple landing page for an online gift shop, showcasing unique gift ideas for women. The page is designed with a stylish layout, following the BEM methodology and utilizing technologies such as HTML, CSS, and SASS for a more organized and maintainable codebase. The design is tailored for desktop viewing, making use of semantic HTML for improved accessibility.
 
@@ -44,4 +44,4 @@ To run the project locally, follow these steps:
 
 ## Deployment
 
-The GiftStore Landing Page project has already been successfully deployed and is accessible at [GiftStore](https://kristina-salnyk.github.io/gift-shop/). You can explore the live version by visiting this link. Feel free to share the link with others to showcase the stylish design featured on the landing page.
+The GiftStore project has already been successfully deployed and is accessible at [GiftStore](https://kristina-salnyk.github.io/gift-shop/). You can explore the live version by visiting this link. Feel free to share the link with others to showcase the stylish design featured on the landing page.
