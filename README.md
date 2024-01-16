@@ -44,4 +44,4 @@ To run the project locally, follow these steps:
 
 ## Deployment
 
-The GiftStore project has already been successfully deployed and is accessible at [GiftStore](https://kristina-salnyk.github.io/gift-shop/). You can explore the live version by visiting this link. Feel free to share the link with others to showcase the stylish design featured on the landing page.
+The GiftStore project has already been successfully deployed and is accessible at [GiftStore](https://kristina-salnyk.github.io/gift-store/). You can explore the live version by visiting this link. Feel free to share the link with others to showcase the stylish design featured on the landing page.
